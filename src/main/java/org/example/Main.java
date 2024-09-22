@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        String filePath = "C:\\Users\\eldar\\Desktop\\parser\\src\\java-test.xlsx";  // Укажите путь к вашему файлу
+        String filePath = "src/main/resources/java-test.xlsx";  // Укажите путь к вашему файлу
 
         ExcelParser parser = new ExcelParser(filePath);
 

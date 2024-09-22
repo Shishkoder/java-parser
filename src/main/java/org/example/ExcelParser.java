@@ -8,6 +8,7 @@ import org.example.entities.CompanyType;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -24,7 +25,7 @@ public class ExcelParser {
     public List<Employee> parseExcelFile() throws IOException {
         List<Employee> employees = new ArrayList<>();
 
-        Workbook workbook = new XSSFWorkbook(new FileInputStream(filePath));
+        Workbook workbook = new XSSFWorkbook(new FileInputStream(new File(filePath)));
 
         Sheet sheet = workbook.getSheetAt(0);
 
